@@ -1,5 +1,5 @@
 # MinecraftServerWatcher
-
+This program is a Minecraft Server Watcher script that continuously runs your Minecraft server. If the server stops for any reason, the script automatically restarts it after a short delay, ensuring the server remains online. Additionally, it prevents multiple instances of the watcher from running simultaneously.
 ```bat
 ::=== Configuration ===
 set "JAVA_PATH=C:\Java\jdk-21\bin\java.exe"
