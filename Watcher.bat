@@ -29,7 +29,7 @@ call :GetMyPID
 echo %MYPID% > "%LOCK_FILE%"
 
 :START
-cmd /C start /WAIT "%SERVER_TITLE%" "%JAVA_PATH%" %JAVA_OPTIONS% -jar "%JAR_FILE%"
+cmd /C start /WAIT "%SERVER_TITLE%" "%JAVA_PATH%" %JAVA_OPTIONS% -jar %JAR_FILE%
 timeout /t %RESTART_DELAY%
 goto START
 
